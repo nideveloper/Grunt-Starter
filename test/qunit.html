@@ -8,11 +8,22 @@
 <body>
   <div id="qunit"></div>
   <div id="qunit-fixture"></div>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="http://code.jquery.com/qunit/qunit-1.15.0.js"></script>
 
-  <script src="../src/test.js"></script>
+  <script src="../src/Calculator/calculator.js"></script>
+  <script src="../src/Calculator/calculator_ui.js"></script>
 
+  <script src="calculator-test.js"></script>
+  <script src="calculator-ui-test.js"></script>
 
-  <script src="test.js"></script>
+  <form style="display:none;">
+  	<input type="text" id="calculatorInput" name="calculatorInput" />
+  	<button type="button" id="add" class="operator" name="add">+</button>
+  	<button type="button" id="subtract" class="operator" name="subtract">-</button>
+  	<button type="button" id="multiply" class="operator" name="multiply">*</button>
+  	<button type="button" id="divide" class="operator" name="divide">/</button>
+  	<button type="button" id="equals" nname="equals">=</button>
+  </form>
 </body>
 </html>
